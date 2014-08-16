@@ -2,6 +2,6 @@
 {% block content %}
     <h1>Rooms</h1>
     {% for printer in printers %}
-    <a href='{{url_for('room', room=printer.room, school=printer.school)}}'>{{printer.room}}</a>
+    <a href='{{url_for('room', room=printer.room, school=printers.name)}}'>{{printer.room}}</a>
     {% endfor %}
 {% endblock %}
