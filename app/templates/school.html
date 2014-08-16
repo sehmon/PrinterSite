@@ -1,5 +1,6 @@
 {% extends "index.html" %}
 {% block content %}
+    <h1>School</h1>
     {% for school in schools %}
     <a href='{{url_for("school", school=school)}}'>{{school}}</a>
     {% endfor %}
