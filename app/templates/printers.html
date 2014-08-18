@@ -1,6 +1,7 @@
-{% extends "base.html" %}
+{% extends "index.html" %}
 {% block content %}
-    <h1>Printer</h1>
+    <h3>Printers</h3>
     {% for printer in printers %}
-    <a href='{{url_for('room', room=printer.room, school=printer.school)}}'>{{printer.room}}</a>
+    <a href='{{url_for('printer', id=printer.id)}}'>{{printer.model}}</a>
+    {% endfor %}
 {% endblock %}

@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+{% block content %}
+<div class="instructionscontainer">
+<h1>How to add this printer:</h1>
+<ol>
+    <li>Click Start</li>
+    <li>Type in, or paste <span class="instructionsprintername">\\UCTECH34\{{printer.name}}</span> into the box</li>
+    <li>Press enter</li>
+    <li>Continue the steps and your printer should be added</li>
+</ol>
+<a href="{{url_for('index')}}">Want to add another?</a>
+</div>
+{% endblock %}

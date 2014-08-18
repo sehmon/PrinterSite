@@ -1,0 +1,21 @@
+body {
+    background-image: url('background.png');
+}
+
+.header {
+    background-color: white;
+    padding: 20px;
+}
+
+.headerhome {
+    display: inline;
+    padding: 5px;
+}
+
+.headertitle {
+    display: inline;
+}
+
+.instructionsprintername {
+    color: #d35400;
+}

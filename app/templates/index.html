@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"css>
+	<link rel="stylesheet" href="../static/stylesheet.css">
     	<title>Find a printer</title>
     </head>
-
     <body>
-    	<h1>Find your printer</h1>
+    <div class="header">
+    	<h1 class="headertitle">Find your printer</h1>
+        <a class="headerhome"href="{{url_for('index')}}">Home</a>
+    </div>
 	{% block content %}
 	{% endblock %}
     </body>
